@@ -1,0 +1,92 @@
+
+.identity{
+    display: flex;
+    flex-direction: column;
+}
+
+.identity__title{
+    margin-left: 3rem;
+}
+
+.identity__subTitles{
+    display: flex;
+}
+
+.identity__header{
+    display: flex;
+    flex-direction: row;
+
+
+    gap: 4rem;
+}
+
+.identity__header__image{
+    flex: 1;
+}
+
+.identity__header__image--image{
+    width: 100%;
+    height: auto;
+}
+
+.identity__header__text{
+    flex: 1;
+}
+
+ul{
+    list-style-position: outside; /* This ensures the bullet is outside the box content of the <li> */
+    padding-left: 20px;
+}
+
+
+.identity__mission, .identity__vision, .identity__values, .identity__values{
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+
+    padding-top: 3rem;
+}
+
+.identity__mission--Image, .identity__vision--Image, .identity__values--Image{
+    width: 90px;
+}
+
+.reusable__span{
+    display: flex;
+}
+
+.hideShowDiv{
+    display: none;
+}
+
+.hideShowImage{
+    width: 20px;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .identity__header{
+        flex-direction: column;
+    }
+
+    .identity__title{
+        margin-left: 0;
+    }
+
+    .identity__mission--Image, .identity__vision--Image, .identity__values--Image{
+        display: none;
+    }
+
+    .reusable__span{
+        display: flex;
+        justify-content: space-between;
+        width: 130px;
+        margin: 1rem 0;
+    }
+
+    .hideShowDiv{
+        display: block;
+    }
+
+
+}

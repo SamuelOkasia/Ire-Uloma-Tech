@@ -1,0 +1,76 @@
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services--title {
+    color: #ffffff;
+    font-family: var(--font-proximaNova);
+    font-size: 43px;
+    margin-bottom: 5rem;
+}
+
+.services--highlight{
+    color: var(--red-color);
+}
+
+.services__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.services__content__service__image{
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.services__content__service--title{
+    font-size: 33px;
+    font-family: var(--font-proximaNova);
+
+    margin-bottom: 0.5rem;
+
+}
+
+.services__content__service--message{
+    font-size: 20px;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    color: #A3B3BC;
+}
+
+.services__content__service--line{
+    height: 1px;
+    background: rgba(255, 255, 255, 0.10);
+    margin-top: 1.5rem;
+}
+@media screen and (max-width: 1050px) {
+    .services__content__service--title{
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .services__content{
+        flex-direction: column;
+    }
+
+    .services__content__service--title{
+        font-size: var(--size-subTitlePhone);
+    }
+
+    .services__content__service--message{
+        font-size: var(--size-textPhone);
+    }
+
+    .services__content__service--line{
+        display: none;
+    }
+
+}

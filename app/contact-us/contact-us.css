@@ -1,0 +1,78 @@
+.contactUs__textSize{
+    font-size: 18px;
+}
+
+.contactUs{
+    display: flex;
+    gap: 2rem;
+}
+
+.contactUs__content{
+    margin-top: 2rem;
+
+    flex: 1;
+    width: 100%;
+}
+
+.contactUs__image{
+    flex: 1.5;
+    width: 100%;
+}
+
+.cotasctUs__image--image{
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+.contactUs__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+#name, #companyName {
+    flex: 0 0 calc(50% - 9px);  /* The `calc` function allows for a 10px gap between the two inputs */
+}
+
+.contactUs__form #email, .contactUs__form #message, .contactUs__form label{
+    flex: 0 0 100%;
+}
+
+.contactUs__form input, .contactUs__form textarea{
+    background: var(--bg-color);
+    border: none;
+    border-bottom:  1px solid  rgba(255, 255, 255, 0.15);
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.contactUs__form input:focus, textarea:focus{
+    outline: none;
+}
+.contactUs__form label{
+    color: white;
+    margin-top: 1rem;
+}
+
+.contactUs__form button{
+    border-radius: 25px;
+    background: #191C21;
+    color: white;
+    width: 150px;
+    height: 40px;
+
+    border: none;
+    margin-top: 1rem;
+
+    margin-left: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .contactUs__image{
+        display: none;
+    }
+}

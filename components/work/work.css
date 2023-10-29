@@ -1,0 +1,95 @@
+
+
+.work{
+
+}
+
+/* Convert the .work container to use flexbox and allow items to wrap */
+.work__container {
+    display: flex;
+    flex-wrap: wrap; /* Allow children to wrap */
+    justify-content: space-between; /* Space items out evenly */
+}
+
+.work__title{
+    margin-left: 3rem;
+}
+/* Each .work__finTechSolutions item will take up half the width minus the gap */
+.work__finTechSolutions, .work__flavourFusion, .work__carcustomz {
+    flex: 0 0 calc(50% - 30px); /* The calc() accounts for the gap */
+}
+.work__finTechSolutions--image:hover, .work__flavourFusion--image:hover, .work__carcustomz--image:hover{
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.09), 0px 12px 13px 0px rgba(0, 0, 0, 0.17), 0px 4px 6px 0px rgba(0, 0, 0, 0.12), 0px -12px 30px 0px rgba(0, 0, 0, 0.12), 0px 54px 55px 0px rgba(0, 0, 0, 0.25);}
+/* Make the image responsive within its container */
+.work__finTechSolutions--image, .work__flavourFusion--image, .work__carcustomz--image{
+    width: 100%;
+    height: auto;
+}
+
+.work__finTechSolutions{
+    margin-bottom: 60px;
+}
+
+
+.work__flavourFusion--image{
+    transform: translateY(-70%);
+}
+
+.work__message{
+    margin-top: -15rem;
+    margin-left: 3rem;
+}
+
+.work__message p{
+    width: 50%;
+}
+
+.work__message--line{
+    height: 3px;
+    background: #AE0930;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.work__containerSD{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .work__title {
+        margin-left: 0;
+    }
+    .work__container{
+        display: none;
+    }
+
+    .work__containerSD{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work{
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .work__flavourFusion--image{
+        transform: none;
+    }
+
+    .work__websiteContainer{
+        display: flex;
+        overflow-x: auto;
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+
+    .work__finTechSolutions, .work__flavourFusion, .work__carcustomz {
+        flex: none;
+    }
+
+    .work__finTechSolutions--image, .work__flavourFusion--image, .work__carcustomz--image{
+        width: 300px;
+        height: auto;
+    }
+}
