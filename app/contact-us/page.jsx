@@ -50,7 +50,7 @@ const Page = () => {
                     alert('There was a problem sending the email.');
                 }
             } else {
-                alert('There was an error connecting to the server.');
+                alert('There was an error connecting to the server sorry.');
             }
         } catch (error) {
             console.error('There was an error sending the form data:', error);
