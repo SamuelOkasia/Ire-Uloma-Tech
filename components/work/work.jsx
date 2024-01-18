@@ -54,22 +54,28 @@ const Work = () => {
                 </div>
                 <div className="work__websiteContainer">
                     <div className="">
-                        <Image className="work__finTechSolutions--image"
-                               src={imageFTS} alt={"Fin Tech Solutions Website"}
-                               unoptimized
-                        />
+                        <Link href="https://ire-uloma-tech-fintechsolutions.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <Image className="work__finTechSolutions--image"
+                                   src={imageFTS} alt={"Fin Tech Solutions Website"}
+                                   unoptimized
+                            />
+                        </Link>
                     </div>
                     <div className="">
-                        <Image className="work__flavourFusion--image"
-                               src={imageFF} alt={"Fin Tech Solutions Website"}
-                               unoptimized
-                        />
+                        <Link href="https://ire-uloma-tech-flavourfusion.netlify.app" target="_blank" rel="noopener noreferrer">
+                            <Image className="work__flavourFusion--image"
+                                   src={imageFF} alt={"Fin Tech Solutions Website"}
+                                   unoptimized
+                            />
+                        </Link>
                     </div>
                     <div className="">
-                        <Image className="work__carcustomz--image"
-                               src={imageCC} alt={"Fin Tech Solutions Website"}
-                               unoptimized
-                        />
+                        <Link href="https://ire-uloma-tech-carcustomz.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <Image className="work__carcustomz--image"
+                                   src={imageCC} alt={"Fin Tech Solutions Website"}
+                                   unoptimized
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>
